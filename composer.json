@@ -1,0 +1,42 @@
+{
+    "name": "palee/om-sdk",
+    "description": "OM SDK",
+    "keywords": [
+      "tuhav2",
+      "palee",
+      "om",
+      "om-sdk"
+    ],
+    "license": "",
+    "require": {
+      "palee/common-sdk" : "dev-develop"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+      "psr-4": {
+        "OmSdk\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "files": [
+        "tests/RepositoriesTest.php"
+      ],
+      "psr-4": {
+        "OmSdk\\Test\\": "tests"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+            "OmSdk\\RepositoryServiceProvider"
+        ]
+      }
+    },
+    "archive" : {
+      "exclude": [
+        "/tests"
+      ]
+    }
+  }
